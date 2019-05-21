@@ -101,49 +101,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
-
-
-/* MARK PRO CUSTOM FONT */
-@font-face {
-  font-family: 'MarkPro';
-  src: url('../lib/fonts/Mark/MarkPro.woff') format('woff'),
-      url('../lib/fonts/Mark/MarkPro.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'MarkPro';
-  src: url('../lib/fonts/Mark/MarkPro-Medium.woff') format('woff'),
-      url('../lib/fonts/Mark/MarkPro-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'MarkPro-Book';
-  src: url('../lib/fonts/Mark/MarkPro-Book.woff') format('woff'),
-      url('../lib/fonts/Mark/MarkPro-Book.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'MarkPro';
-  src: url('../lib/fonts/Mark/MarkPro-Bold.woff') format('woff'),
-      url('../lib/fonts/Mark/MarkPro-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'MarkPro';
-  src: url('../lib/fonts/Mark/MarkPro-Light.woff') format('woff'),
-      url('../lib/fonts/Mark/MarkPro-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-
 /* ------------------------------------------------------ */
 /* ############### 2. BOOTSTRAP FRAMEWORK ############### */
 /* ------------------------------------------------------ */
@@ -204,7 +161,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
-  font-family: "MarkPro", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5;
@@ -9732,7 +9689,7 @@ table.dataTable {
   background-color: #fff; }
   .fc-unthemed tbody tr td .fc-day-number {
     padding: 10px;
-    font-family: "MarkPro", "Helvetica Neue", Arial, sans-serif; }
+    font-family: "Lato", "Helvetica Neue", Arial, sans-serif; }
   .fc-unthemed tbody tr td .fc-today {
     background-color: #f8f9fa; }
 
@@ -11621,7 +11578,7 @@ textarea.parsley-success:focus {
   align-items: center;
   background-color: #fff;
   border-bottom: 1px solid #dee2e6; }
-  .slim-header .container {
+  .slim-header .container, .slim-header .container-fluid {
     display: flex;
     align-items: center;
     justify-content: space-between; }
@@ -12479,6 +12436,195 @@ textarea.parsley-success:focus {
   .slim-full-width .slim-navbar .sub-item {
     width: 100%; } }
 
+.slim-sidebar {
+  width: 230px;
+  background-color: #fff;
+  border-right: 1px solid #ced4da;
+  padding: 20px 0;
+  transition: all 0.2s ease-in-out;
+  flex-shrink: 0;
+  position: absolute;
+  margin-left: -230px; }
+  @media (min-width: 1200px) {
+    .slim-sidebar {
+      margin-left: 0;
+      position: relative; } }
+
+.sidebar-label {
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0 20px;
+  margin-bottom: 15px;
+  color: #212529;
+  font-weight: 500;
+  display: block; }
+
+.sidebar-nav-item {
+  display: block;
+  width: 100%; }
+  .sidebar-nav-item.with-sub > .sidebar-nav-link::after {
+    content: '\f3d0';
+    font-family: 'Ionicons';
+    margin-left: auto;
+    position: relative;
+    opacity: .75; }
+  .sidebar-nav-item:first-child .sidebar-nav-link {
+    border-top: 1px solid #dee2e6; }
+    .sidebar-nav-item:first-child .sidebar-nav-link.active {
+      border-top-width: 0; }
+
+.sidebar-nav-link {
+  padding: 0 20px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #495057;
+  border-bottom: 1px solid #dee2e6; }
+  .sidebar-nav-link i {
+    font-size: 24px;
+    color: #1b84e7;
+    margin-right: 8px;
+    width: 20px;
+    text-align: center; }
+    .sidebar-nav-link i.ion-ios-analytics-outline {
+      font-size: 20px; }
+    .sidebar-nav-link i.ion-ios-book-outline {
+      font-size: 20px; }
+    .sidebar-nav-link i.ion-ios-location-outline {
+      font-size: 22px; }
+    .sidebar-nav-link i.ion-ios-information-outline {
+      font-size: 22px; }
+    .sidebar-nav-link i.ion-ios-chatboxes-outline {
+      font-size: 22px; }
+  .sidebar-nav-link:hover, .sidebar-nav-link:focus {
+    background-color: #f8f9fa; }
+  .sidebar-nav-link.active {
+    background-color: #1b84e7;
+    background-image: linear-gradient(to right, #1b84e7 0%, #1515af 100%);
+    background-repeat: repeat-x;
+    border-bottom-width: 0;
+    color: #fff;
+    margin-right: -1px; }
+    .sidebar-nav-link.active i {
+      color: #fff; }
+    .sidebar-nav-link.active + .sidebar-nav-sub {
+      display: block; }
+
+.sidebar-nav-sub {
+  border-bottom: 1px solid #dee2e6;
+  display: none; }
+  .sidebar-nav-sub .nav-sub-item {
+    display: block;
+    width: 100%; }
+    .sidebar-nav-sub .nav-sub-item + .nav-sub-item {
+      margin-top: 1px; }
+    .sidebar-nav-sub .nav-sub-item.sub-with-sub .nav-sub-link::after {
+      content: '\f3d0';
+      font-family: 'Ionicons';
+      margin-left: auto;
+      position: relative;
+      opacity: .75;
+      font-size: 12px; }
+    .sidebar-nav-sub .nav-sub-item.sub-with-sub ul {
+      margin: 0;
+      padding: 5px 0;
+      list-style: none;
+      display: none; }
+      .sidebar-nav-sub .nav-sub-item.sub-with-sub ul li {
+        margin-bottom: 10px; }
+      .sidebar-nav-sub .nav-sub-item.sub-with-sub ul a {
+        color: #868ba1;
+        padding-left: 60px;
+        font-size: 13px; }
+        .sidebar-nav-sub .nav-sub-item.sub-with-sub ul a:hover, .sidebar-nav-sub .nav-sub-item.sub-with-sub ul a:focus {
+          color: #1b84e7; }
+  .sidebar-nav-sub .nav-sub-link {
+    padding: 6px 20px 6px 48px;
+    color: #868ba1;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; }
+    .sidebar-nav-sub .nav-sub-link:hover, .sidebar-nav-sub .nav-sub-link:focus {
+      background-color: #f8f9fa;
+      color: #1b84e7; }
+    .sidebar-nav-sub .nav-sub-link.active {
+      background-color: #f2f4f6;
+      color: #495057; }
+
+.slim-sticky-sidebar .slim-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; }
+
+.slim-sticky-sidebar .slim-sidebar {
+  position: fixed;
+  top: 75px;
+  left: 0;
+  bottom: 0;
+  overflow: hidden; }
+
+.slim-sticky-sidebar .nav-sidebar {
+  padding-bottom: 20px; }
+
+.slim-sticky-sidebar .slim-mainpanel {
+  margin-top: 75px; }
+  @media (min-width: 1200px) {
+    .slim-sticky-sidebar .slim-mainpanel {
+      margin-left: 230px; } }
+
+/************** RTL SUPPORT **************
+/*****************************************/
+[dir="rtl"] .sidebar-label {
+  text-align: right; }
+
+[dir="rtl"] .slim-sidebar {
+  border-right-width: 0;
+  border-left: 1px solid #ced4da;
+  margin-left: 0;
+  margin-right: -230px; }
+  @media (min-width: 1200px) {
+    [dir="rtl"] .slim-sidebar {
+      margin-right: 0; } }
+
+[dir="rtl"] .sidebar-nav-item.with-sub > .sidebar-nav-link::after {
+  margin-left: 0;
+  margin-right: auto; }
+
+[dir="rtl"] .sidebar-nav-sub .nav-sub-link {
+  padding-left: 15px;
+  padding-right: 46px; }
+
+[dir="rtl"] .sidebar-nav-link i {
+  margin-right: 0;
+  margin-left: 8px; }
+
+[dir="rtl"] .sidebar-nav-sub .nav-sub-item.sub-with-sub .nav-sub-link {
+  padding-left: 20px;
+  padding-right: 46px; }
+  [dir="rtl"] .sidebar-nav-sub .nav-sub-item.sub-with-sub .nav-sub-link::after {
+    margin-left: 0;
+    margin-right: auto; }
+
+[dir="rtl"] .sidebar-nav-sub .nav-sub-item.sub-with-sub ul a {
+  display: block;
+  padding-left: 0;
+  padding-right: 60px;
+  text-align: right; }
+
+[dir="rtl"] .slim-sticky-sidebar .slim-sidebar {
+  left: auto;
+  right: 0; }
+
+@media (min-width: 1200px) {
+  [dir="rtl"] .slim-sticky-sidebar .slim-mainpanel {
+    margin-left: 0;
+    margin-right: 230px; } }
+
 /* -------------------------------------------------------- */
 /* ############### 6. TEMPLATE PAGES STYLES ############### */
 /* -------------------------------------------------------- */
@@ -12675,7 +12821,7 @@ textarea.parsley-success:focus {
   .dash-headline-item-one h1 {
     font-size: 56px;
     font-weight: 400;
-    font-family: "MarkPro", "Helvetica Neue", Arial, sans-serif;
+    font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
     color: #343a40;
     margin-bottom: 20px; }
     @media (min-width: 576px) {
@@ -12785,7 +12931,7 @@ textarea.parsley-success:focus {
   .dash-headline-item-two h4 {
     color: #343a40;
     font-size: 32px;
-    font-family: "MarkPro", "Helvetica Neue", Arial, sans-serif;
+    font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
     font-weight: 700; }
   .dash-headline-item-two .item-label {
     text-transform: uppercase;
@@ -12849,7 +12995,7 @@ textarea.parsley-success:focus {
   .dash-headline-item-three h1 {
     font-weight: 400;
     font-size: 48px;
-    font-family: "MarkPro", "Helvetica Neue", Arial, sans-serif;
+    font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
     margin-bottom: 10px; }
   .dash-headline-item-three .item-label {
     text-transform: uppercase;
@@ -12904,7 +13050,7 @@ textarea.parsley-success:focus {
   .card-dash-one .dash-content h2 {
     color: #343a40;
     font-weight: 700;
-    font-family: "MarkPro", "Helvetica Neue", Arial, sans-serif;
+    font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
     margin-bottom: 0; }
 
 .card-customer-overview .card-header {
@@ -12953,7 +13099,7 @@ textarea.parsley-success:focus {
   .card-status h1 {
     margin-bottom: 0;
     color: #343a40;
-    font-family: "MarkPro", "Helvetica Neue", Arial, sans-serif;
+    font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
     font-weight: 700; }
   .card-status .icon {
     font-size: 64px; }
@@ -13026,7 +13172,7 @@ textarea.parsley-success:focus {
     margin-bottom: 5px; }
   .card-earning-summary h1 {
     color: #343a40;
-    font-family: "MarkPro", "Helvetica Neue", Arial, sans-serif;
+    font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
     font-weight: 700;
     margin-bottom: 3px; }
   .card-earning-summary span {
@@ -13073,7 +13219,7 @@ textarea.parsley-success:focus {
   font-size: 96px;
   font-weight: 300;
   color: #343a40;
-  font-family: "MarkPro", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
   margin-bottom: 5px;
   line-height: 1; }
 
@@ -13145,7 +13291,7 @@ textarea.parsley-success:focus {
     .d-h-t-right .summary-item h1 {
       margin-bottom: 0;
       color: #343a40;
-      font-family: "MarkPro", "Helvetica Neue", Arial, sans-serif;
+      font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
       font-weight: 700; }
     .d-h-t-right .summary-item span {
       font-size: 11px;
@@ -13167,7 +13313,7 @@ textarea.parsley-success:focus {
     flex-direction: column; }
     .dashboard-chart-one .card-total h1 {
       font-size: 64px;
-      font-family: "MarkPro", "Helvetica Neue", Arial, sans-serif;
+      font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
       font-weight: 700;
       color: #343a40;
       text-align: center;
@@ -13184,7 +13330,7 @@ textarea.parsley-success:focus {
     color: #343a40;
     margin-bottom: 3px; }
   .dashboard-chart-one .card-revenue h1 {
-    font-family: "MarkPro", "Helvetica Neue", Arial, sans-serif;
+    font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
     color: #343a40;
     font-size: 40px;
     font-weight: 700;
@@ -13205,7 +13351,7 @@ textarea.parsley-success:focus {
     .dashboard-chart-one .card-revenue label span {
       color: #343a40;
       font-weight: 700;
-      font-family: "MarkPro", "Helvetica Neue", Arial, sans-serif; }
+      font-family: "Lato", "Helvetica Neue", Arial, sans-serif; }
 
 .nav-statistics-wrapper {
   display: flex;
@@ -13297,7 +13443,7 @@ textarea.parsley-success:focus {
     margin-bottom: 0; }
   .card-popular-product h1 {
     color: #212529;
-    font-family: "MarkPro", "Helvetica Neue", Arial, sans-serif;
+    font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
     font-weight: 700;
     margin-bottom: 0;
     letter-spacing: -1px; }
@@ -13445,7 +13591,7 @@ textarea.parsley-success:focus {
 
 .dropdown-tab-price {
   color: #1b84e7;
-  font-family: "MarkPro", "Helvetica Neue", Arial, sans-serif; }
+  font-family: "Lato", "Helvetica Neue", Arial, sans-serif; }
 
 .dropdown-tab-label {
   margin-bottom: 20px;
@@ -14102,7 +14248,7 @@ textarea.parsley-success:focus {
   font-weight: 400;
   color: #343a40;
   margin-bottom: 25px;
-  font-family: "MarkPro", "Helvetica Neue", Arial, sans-serif; }
+  font-family: "Lato", "Helvetica Neue", Arial, sans-serif; }
 
 .btn-pricing {
   display: block;
@@ -14152,7 +14298,7 @@ textarea.parsley-success:focus {
     border-left: 1px solid #ced4da;
     border-right: 1px solid #ced4da; }
     .card-pricing-three .card-pricing h1 {
-      font-family: "MarkPro", "Helvetica Neue", Arial, sans-serif;
+      font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
       color: #212529;
       margin-bottom: 0; }
     .card-pricing-three .card-pricing p {
@@ -14263,7 +14409,7 @@ textarea.parsley-success:focus {
     align-items: center; }
   .card-connection .col-4 {
     font-size: 40px;
-    font-family: "MarkPro", "Helvetica Neue", Arial, sans-serif;
+    font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
     text-align: center; }
   .card-connection hr {
     border-top: 1px solid #dee2e6;
@@ -14809,7 +14955,7 @@ textarea.parsley-success:focus {
         bottom: 0;
         border-left: 1px solid #ced4da; }
       .card-sales .row .col p {
-        font-family: "MarkPro", "Helvetica Neue", Arial, sans-serif;
+        font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
         color: #343a40;
         font-weight: 700;
         margin-bottom: 10px;
@@ -34187,7 +34333,7 @@ a.hover-white-8:hover, a.hover-white-8:focus {
   font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif; }
 
 .tx-mark {
-  font-family: "MarkPro", "Helvetica Neue", Arial, sans-serif; }
+  font-family: "Lato", "Helvetica Neue", Arial, sans-serif; }
 
 .tx-sserif {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
