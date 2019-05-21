@@ -2,15 +2,6 @@
 /* ############### MAIN PANEL ############### */
 /* ------------------------------------------ */
 
-.slim-mainpanel {
-  @include transition($transition-base);
-  min-height: calc(100vh - 276px);
-
-  @include media-breakpoint-up(lg) {
-    min-height: calc(100vh - 263px);
-  }
-}
-
 .slim-pageheader {
   padding: 15px 0;
 
@@ -66,6 +57,5 @@
     padding-right: 10px;
     border-left: 0;
     border-right: 4px solid $slim-primary;
-    text-align: right;
   }
 }

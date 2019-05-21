@@ -11,68 +11,10 @@
   background-color: #fff;
   border-bottom: 1px solid $gray-300;
 
-  .container,
-  .container-fluid {
+  .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-
-  &.with-sidebar {
-    .slim-logo {
-      width: $slim-sidebar-width - 25px;
-      margin-right: 10px;
-      margin-left: -$slim-sidebar-width + 15px;
-
-      @include media-breakpoint-up(xl) { margin-left: 0; }
-    }
-
-    .slim-sidebar-menu {
-      margin-right: 15px;
-      width: 45px;
-      height: 45px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      @include border-radius(100%);
-      @include transition($transition-base);
-      border: 1px solid $gray-400;
-      flex-shrink: 0;
-
-      span {
-        width: 16px;
-        height: 2px;
-        background-color: $gray-500;
-        position: relative;
-        @include transition($transition-base);
-        @include border-radius(2px);
-
-        &::before,
-        &::after {
-          content: '';
-          width: 16px;
-          height: 2px;
-          background-color: $gray-500;
-          position: absolute;
-          left: 0;
-          @include transition($transition-base);
-          @include border-radius(2px);
-        }
-
-        &::before { top: -5px; }
-        &::after { bottom: -5px; }
-      }
-
-      &:hover,
-      &:focus {
-        background-color: $gray-100;
-        border-color: $slim-primary;
-
-        span,
-        span::before,
-        span::after { background-color: $blue; }
-      }
-    }
   }
 }
 
@@ -82,7 +24,6 @@
   font-size: 32px;
   font-weight: 700;
   font-family: $font-family-roboto;
-  @include transition($transition-base);
 
   a { color: $blue; }
 
@@ -132,7 +73,6 @@
 }
 
 .slim-header-right {
-  @include transition($transition-base);
 
   .dropdown-menu {
     border-top: 0;
@@ -344,24 +284,8 @@
 /*****************************************/
 
 [dir="rtl"] {
-
-  .slim-header.with-sidebar {
-    .slim-logo {
-      margin-left: 10px;
-      margin-right: -$slim-sidebar-width + 15px;
-      text-align: right;
-
-      @include media-breakpoint-up(xl) { margin-right: 0; }
-    }
-
-    .slim-sidebar-menu {
-      margin-right: 0;
-      margin-left: 15px;
-    }
-  }
-
   .slim-logo {
-    @include media-breakpoint-up(xl) {
+    @include media-breakpoint-up(lg) {
       margin-right: 0;
       margin-left: 60px;
     }
