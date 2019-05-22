@@ -1,16 +1,6 @@
 .slim-header {
   background-color: #367EC1;
   border-bottom-width: 0; }
-  .slim-header.with-sidebar .slim-sidebar-menu {
-    background-color: transparent;
-    border-color: rgba(255, 255, 255, 0.5); }
-    .slim-header.with-sidebar .slim-sidebar-menu span, .slim-header.with-sidebar .slim-sidebar-menu span::before, .slim-header.with-sidebar .slim-sidebar-menu span::after {
-      background-color: rgba(255, 255, 255, 0.75); }
-    .slim-header.with-sidebar .slim-sidebar-menu:hover, .slim-header.with-sidebar .slim-sidebar-menu:focus {
-      background-color: transparent;
-      border-color: #fff; }
-      .slim-header.with-sidebar .slim-sidebar-menu:hover span, .slim-header.with-sidebar .slim-sidebar-menu:hover span::before, .slim-header.with-sidebar .slim-sidebar-menu:hover span::after, .slim-header.with-sidebar .slim-sidebar-menu:focus span, .slim-header.with-sidebar .slim-sidebar-menu:focus span::before, .slim-header.with-sidebar .slim-sidebar-menu:focus span::after {
-        background-color: #fff; }
 
 .slim-logo a {
   color: #fff;
@@ -84,50 +74,3 @@
   .slim-navbar .mega-dropdown .sub-item .section-label {
     color: #868ba1;
     border-bottom-color: rgba(255, 255, 255, 0.08); }
-
-.slim-sidebar {
-  background-color: #191F25;
-  border-right-width: 0; }
-
-.sidebar-label {
-  color: rgba(255, 255, 255, 0.5);
-  margin-bottom: 15px; }
-
-.sidebar-nav-item:first-child .sidebar-nav-link {
-  border-top-color: rgba(255, 255, 255, 0.08); }
-  .sidebar-nav-item:first-child .sidebar-nav-link.active {
-    border-top-width: 1px; }
-
-.sidebar-nav-link {
-  border-bottom-color: rgba(255, 255, 255, 0.08);
-  color: rgba(255, 255, 255, 0.5); }
-  .sidebar-nav-link .icon {
-    color: rgba(255, 255, 255, 0.5); }
-  .sidebar-nav-link:hover, .sidebar-nav-link:focus {
-    background-color: #151a1f;
-    color: rgba(255, 255, 255, 0.6); }
-    .sidebar-nav-link:hover .icon, .sidebar-nav-link:focus .icon {
-      color: rgba(255, 255, 255, 0.6); }
-  .sidebar-nav-link.active {
-    background-image: none;
-    background-color: #151a1f;
-    color: #367EC1;
-    border-bottom-width: 1px; }
-    .sidebar-nav-link.active .icon {
-      color: #367EC1; }
-
-.sidebar-nav-sub {
-  border-bottom-color: rgba(255, 255, 255, 0.08);
-  padding: 8px 0; }
-
-.sidebar-nav-sub .nav-sub-link {
-  color: rgba(255, 255, 255, 0.4); }
-  .sidebar-nav-sub .nav-sub-link:hover, .sidebar-nav-sub .nav-sub-link:focus {
-    background-color: transparent;
-    color: #367EC1; }
-  .sidebar-nav-sub .nav-sub-link.active {
-    background-color: transparent;
-    color: #367EC1; }
-
-[dir="rtl"] .sidebar-nav-sub {
-  padding: 8px 0; }
