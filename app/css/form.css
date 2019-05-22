@@ -1,136 +1,3 @@
-/* ---------- GENERAL----------  */
-
-body {
-    background-color: #F8FAFE !important;
-    color: #1B314B !important;
-}
-.pss-blue {
-    color: #0744DD;
-}
-
-body .slim-sidebar {
-    background-color: transparent;
-    border-right: 1px solid #ced4da61;
-    padding: 10px 0;
-    width: 215px;
-}
-
-
-/* ---------- HEADER ----------  */
-body .logged-user img {
-    border: unset;
-}
-
-body .slim-header {
-    border-bottom: 0;
-    box-shadow: 0 1px 12px 0 rgba(195, 203, 222, 0.59);
-}
-
-body .pss-search-header .form-control {
-    padding-left: 0px;
-    width: 441px;
-}
-
-body .search-box .form-control {
-    font-size: 1rem;
-}
-
-body .search-box.pss-search-header {
-    flex-direction: row-reverse;
-    border: 0px; 
-    border-radius: 6px;
-    box-shadow: 0 1px 3px 1px rgba(127, 131, 155, 0.15), 0 1px 2px 0 rgba(127, 131, 155, 0.3);
-}
-body .search-box .btn {
-    background-color: transparent;
-    color: black;
-}
-body .slim-header span {
-    color: #48446F;
-    font-size: 16px;
-}
-
-body .logged-user div {
-    width: 45px;
-    height: 45px;
-    padding: 10px;
-    border-radius: 100%;
-    background-color: #E3E8ED;
-    text-align: center;
-    font-size: 16px;
-    color: #48446F;
-}
-
-body .logged-user:hover div {
-    box-shadow: 0 0 10px rgba(27, 132, 231, 0.2);
-}
-
-/* ---------- SIDEBAR ----------  */
-body .sidebar-nav-link.active {
-    background-color: rgba(7, 68, 221, 0.089);
-    background-image: unset;
-    color: #0744DD;
-    border-radius: 0px 50px 50px 0px;
-}
-body .nav-sidebar {
-    margin-right: 5px;
-}
-
-body .sidebar-nav-link, body .sidebar-nav-item:first-child {
-    
-    color: #353F69;;
-    border-bottom: 0px;
-}
-
-body .sidebar-nav-link:focus, body .sidebar-nav-link:hover {
-    background-color: rgba(7, 68, 221, 0.089);
-    border-radius: 0px 50px 50px 0px;
-    color: #0744DD;
-}
-
-body .sidebar-nav-link.active i {
-    color: #0744DD;
-}
-
-body .sidebar-nav-link i, 
-body .sidebar-nav-link i.ion-ios-book-outline, 
-body .sidebar-nav-link i.ion-ios-chatboxes-outline {
-    font-size: 18px;
-}
-
-
-body .sidebar-nav-link i {
-    /* font-size: 13px; */
-    color: #353F69;
-}
-
-/* ---------- Dashboard- ----------  */
-body .slim-pageheader {
-    flex-direction: unset;
-}
-
-body .slim-pagetitle {
-    padding-left: 0px;
-    border-left: 0px;
-    text-transform: none;
-    font-weight: 500;
-}
-
-body .dashboard-title {
-    font-size: 32px;
-    color: #353F69;
-}
-
-@media (min-width: 768px) {
-
-    body .slim-body .slim-mainpanel .container {
-        padding: 50px;
-    }
-
-}
-
-
-
 
 
 
@@ -181,6 +48,34 @@ body .dashboard-title {
   #submit {
     margin-top: 50px;
   }
+
+
+
+  .btn-fill-md {
+    transition: color 0.25s ease;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+
+.formPSSbtn {
+    background: #0744DD;
+    margin: auto;
+    line-height: 1.75;
+    font-family: MarkPro;
+    font-size: 16px;
+    background-image: linear-gradient(180deg, #1179F0 0%, #0744DD 100%);
+    border: 1px solid #0744DD;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px 0 rgba(15, 115, 238, 0.52);
+
+}
+
+button.formPSSbtn {
+    width: 100%;
+}
+
 
 
 
