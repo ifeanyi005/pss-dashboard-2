@@ -1,11 +1,4 @@
 
-
-
-
-
-
-
-
 #status-div {
     width: 50%;
     margin-left: auto;
@@ -49,14 +42,11 @@
     margin-top: 50px;
   }
 
-
-
   .btn-fill-md {
     transition: color 0.25s ease;
     color: #FFFFFF;
     cursor: pointer;
 }
-
 
 
 .formPSSbtn {
@@ -75,15 +65,6 @@
 button.formPSSbtn {
     width: 100%;
 }
-
-
-
-
-
-
-
-
-
 
 .input-group {
     margin-bottom: 1rem;
