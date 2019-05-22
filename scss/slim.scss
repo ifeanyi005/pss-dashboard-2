@@ -115,6 +115,9 @@
 // Custom mixins for bootstrap
 @import "bootstrap/mixins";
 
+// Custom mixins for bootstrap
+@import "bootstrap/mixins";
+
 /* ------------------------------------------------------ */
 /* ############### 3. BOOTSTRAP OVERRIDES ############### */
 /* ------------------------------------------------------ */
@@ -179,6 +182,7 @@
 @import "layout/footer";
 @import "layout/full-width";
 @import "layout/sidebar";
+@import "layout/fonts";
 
 /* -------------------------------------------------------- */
 /* ############### 6. TEMPLATE PAGES STYLES ############### */

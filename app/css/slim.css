@@ -161,7 +161,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
-  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-family: "MarkPro", "Helvetica Neue", Arial, sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5;
@@ -3922,7 +3922,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-family: "MarkPro", "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -4007,7 +4007,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-family: "MarkPro", "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -10384,7 +10384,7 @@ table.dataTable {
 
 /* Setup basic CSS for Label */
 .jqvmap-pin {
-  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-family: "MarkPro", "Helvetica Neue", Arial, sans-serif;
   cursor: default;
   pointer-events: none; }
 
@@ -11206,7 +11206,7 @@ textarea.parsley-success:focus {
     padding: 8px 15px;
     background-image: none;
     background-color: #ced4da;
-    font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+    font-family: "MarkPro", "Helvetica Neue", Arial, sans-serif;
     font-size: 12px;
     text-shadow: none;
     text-transform: capitalize;
@@ -11218,7 +11218,7 @@ textarea.parsley-success:focus {
       text-shadow: none; }
 
 .sp-button-container .sp-cancel {
-  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-family: "MarkPro", "Helvetica Neue", Arial, sans-serif;
   font-size: 12px;
   text-transform: capitalize;
   color: #6c757d !important; }
@@ -11315,7 +11315,7 @@ textarea.parsley-success:focus {
       .card-header.note-toolbar > .btn-group .dropdown-item blockquote,
       .card-header.note-toolbar > .btn-group .dropdown-item pre {
         margin-bottom: 0;
-        font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+        font-family: "MarkPro", "Helvetica Neue", Arial, sans-serif;
         font-size: 13px; }
       .card-header.note-toolbar > .btn-group .dropdown-item h1, .card-header.note-toolbar > .btn-group .dropdown-item h2, .card-header.note-toolbar > .btn-group .dropdown-item h3, .card-header.note-toolbar > .btn-group .dropdown-item h4, .card-header.note-toolbar > .btn-group .dropdown-item h5, .card-header.note-toolbar > .btn-group .dropdown-item h6 {
         font-size: 13px;
@@ -11327,7 +11327,7 @@ textarea.parsley-success:focus {
     .card-header.note-toolbar > .btn-group .dropdown-fontname .dropdown-item {
       padding-left: 5px; }
       .card-header.note-toolbar > .btn-group .dropdown-fontname .dropdown-item span {
-        font-family: "Roboto", "Helvetica Neue", Arial, sans-serif !important;
+        font-family: "MarkPro", "Helvetica Neue", Arial, sans-serif !important;
         font-size: 12px; }
 
 /* ----------------------------------------- */
@@ -12080,7 +12080,7 @@ textarea.parsley-success:focus {
         margin-bottom: 15px;
         font-size: 11px;
         font-weight: 500;
-        font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+        font-family: "MarkPro", "Helvetica Neue", Arial, sans-serif;
         text-align: left;
         letter-spacing: 1px; }
   .slim-navbar .sub-item {
@@ -12435,6 +12435,269 @@ textarea.parsley-success:focus {
 @media (min-width: 1200px) {
   .slim-full-width .slim-navbar .sub-item {
     width: 100%; } }
+
+.slim-sidebar {
+  width: 230px;
+  background-color: #fff;
+  border-right: 1px solid #ced4da;
+  padding: 20px 0;
+  transition: all 0.2s ease-in-out;
+  flex-shrink: 0;
+  position: absolute;
+  margin-left: -230px; }
+  @media (min-width: 1200px) {
+    .slim-sidebar {
+      margin-left: 0;
+      position: relative; } }
+
+.sidebar-label {
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0 20px;
+  margin-bottom: 15px;
+  color: #212529;
+  font-weight: 500;
+  display: block; }
+
+.sidebar-nav-item {
+  display: block;
+  width: 100%; }
+  .sidebar-nav-item.with-sub > .sidebar-nav-link::after {
+    content: '\f3d0';
+    font-family: 'Ionicons';
+    margin-left: auto;
+    position: relative;
+    opacity: .75; }
+  .sidebar-nav-item:first-child .sidebar-nav-link {
+    border-top: 1px solid #dee2e6; }
+    .sidebar-nav-item:first-child .sidebar-nav-link.active {
+      border-top-width: 0; }
+
+.sidebar-nav-link {
+  padding: 0 20px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #495057;
+  border-bottom: 1px solid #dee2e6; }
+  .sidebar-nav-link i {
+    font-size: 24px;
+    color: #1b84e7;
+    margin-right: 8px;
+    width: 20px;
+    text-align: center; }
+    .sidebar-nav-link i.ion-ios-analytics-outline {
+      font-size: 20px; }
+    .sidebar-nav-link i.ion-ios-book-outline {
+      font-size: 20px; }
+    .sidebar-nav-link i.ion-ios-location-outline {
+      font-size: 22px; }
+    .sidebar-nav-link i.ion-ios-information-outline {
+      font-size: 22px; }
+    .sidebar-nav-link i.ion-ios-chatboxes-outline {
+      font-size: 22px; }
+  .sidebar-nav-link:hover, .sidebar-nav-link:focus {
+    background-color: #f8f9fa; }
+  .sidebar-nav-link.active {
+    background-color: #1b84e7;
+    background-image: linear-gradient(to right, #1b84e7 0%, #1515af 100%);
+    background-repeat: repeat-x;
+    border-bottom-width: 0;
+    color: #fff;
+    margin-right: -1px; }
+    .sidebar-nav-link.active i {
+      color: #fff; }
+    .sidebar-nav-link.active + .sidebar-nav-sub {
+      display: block; }
+
+.sidebar-nav-sub {
+  border-bottom: 1px solid #dee2e6;
+  display: none; }
+  .sidebar-nav-sub .nav-sub-item {
+    display: block;
+    width: 100%; }
+    .sidebar-nav-sub .nav-sub-item + .nav-sub-item {
+      margin-top: 1px; }
+    .sidebar-nav-sub .nav-sub-item.sub-with-sub .nav-sub-link::after {
+      content: '\f3d0';
+      font-family: 'Ionicons';
+      margin-left: auto;
+      position: relative;
+      opacity: .75;
+      font-size: 12px; }
+    .sidebar-nav-sub .nav-sub-item.sub-with-sub ul {
+      margin: 0;
+      padding: 5px 0;
+      list-style: none;
+      display: none; }
+      .sidebar-nav-sub .nav-sub-item.sub-with-sub ul li {
+        margin-bottom: 10px; }
+      .sidebar-nav-sub .nav-sub-item.sub-with-sub ul a {
+        color: #868ba1;
+        padding-left: 60px;
+        font-size: 13px; }
+        .sidebar-nav-sub .nav-sub-item.sub-with-sub ul a:hover, .sidebar-nav-sub .nav-sub-item.sub-with-sub ul a:focus {
+          color: #1b84e7; }
+  .sidebar-nav-sub .nav-sub-link {
+    padding: 6px 20px 6px 48px;
+    color: #868ba1;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; }
+    .sidebar-nav-sub .nav-sub-link:hover, .sidebar-nav-sub .nav-sub-link:focus {
+      background-color: #f8f9fa;
+      color: #1b84e7; }
+    .sidebar-nav-sub .nav-sub-link.active {
+      background-color: #f2f4f6;
+      color: #495057; }
+
+.slim-sticky-sidebar .slim-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; }
+
+.slim-sticky-sidebar .slim-sidebar {
+  position: fixed;
+  top: 75px;
+  left: 0;
+  bottom: 0;
+  overflow: hidden; }
+
+.slim-sticky-sidebar .nav-sidebar {
+  padding-bottom: 20px; }
+
+.slim-sticky-sidebar .slim-mainpanel {
+  margin-top: 75px; }
+  @media (min-width: 1200px) {
+    .slim-sticky-sidebar .slim-mainpanel {
+      margin-left: 230px; } }
+
+.slim-body {
+  transition: all 0.2s ease-in-out; }
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .slim-body {
+    transition: none; } }
+
+@media (min-width: 1200px) {
+  .slim-body {
+    display: flex;
+    min-height: calc(100vh - 75px); } }
+
+.slim-body .slim-mainpanel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative; }
+
+.slim-body .slim-mainpanel .container {
+  max-width: none;
+  padding: 15px; }
+
+@media (min-width: 576px) {
+  .slim-body .slim-mainpanel .container {
+    padding: 20px; } }
+
+@media (min-width: 768px) {
+  .slim-body .slim-mainpanel .container {
+    padding: 25px; } }
+
+.slim-body .slim-mainpanel .container.container-messages {
+  padding: 0; }
+
+@media (min-width: 992px) {
+  .slim-body .slim-mainpanel .container.container-messages {
+    padding: 20px; } }
+
+.slim-body .slim-pageheader {
+  padding-top: 0; }
+
+.slim-body .slim-footer {
+  margin-top: auto; }
+
+/************** RTL SUPPORT **************
+/*****************************************/
+[dir="rtl"] .sidebar-label {
+  text-align: right; }
+
+[dir="rtl"] .slim-sidebar {
+  border-right-width: 0;
+  border-left: 1px solid #ced4da;
+  margin-left: 0;
+  margin-right: -230px; }
+  @media (min-width: 1200px) {
+    [dir="rtl"] .slim-sidebar {
+      margin-right: 0; } }
+
+[dir="rtl"] .sidebar-nav-item.with-sub > .sidebar-nav-link::after {
+  margin-left: 0;
+  margin-right: auto; }
+
+[dir="rtl"] .sidebar-nav-sub .nav-sub-link {
+  padding-left: 15px;
+  padding-right: 46px; }
+
+[dir="rtl"] .sidebar-nav-link i {
+  margin-right: 0;
+  margin-left: 8px; }
+
+[dir="rtl"] .sidebar-nav-sub .nav-sub-item.sub-with-sub .nav-sub-link {
+  padding-left: 20px;
+  padding-right: 46px; }
+  [dir="rtl"] .sidebar-nav-sub .nav-sub-item.sub-with-sub .nav-sub-link::after {
+    margin-left: 0;
+    margin-right: auto; }
+
+[dir="rtl"] .sidebar-nav-sub .nav-sub-item.sub-with-sub ul a {
+  display: block;
+  padding-left: 0;
+  padding-right: 60px;
+  text-align: right; }
+
+[dir="rtl"] .slim-sticky-sidebar .slim-sidebar {
+  left: auto;
+  right: 0; }
+
+@media (min-width: 1200px) {
+  [dir="rtl"] .slim-sticky-sidebar .slim-mainpanel {
+    margin-left: 0;
+    margin-right: 230px; } }
+
+@font-face {
+  font-family: 'MarkPro';
+  src: url("../../app/lib/fonts/Mark/MarkPro.woff") format("woff"), url("../../app/lib/fonts/Mark/MarkPro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MarkPro';
+  src: url("../../app/lib/fonts/Mark/MarkPro-Medium.woff") format("woff"), url("../../app/lib/fonts/MarkPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MarkPro-Book';
+  src: url("../../app/lib/fonts/Mark/MarkPro-Book.woff") format("woff"), url("../../app/lib/fonts/Mark/MarkPro-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MarkPro';
+  src: url("../../app/lib/fonts/Mark/MarkPro-Bold.woff") format("woff"), url("../../app/lib/fonts/Mark/MarkPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MarkPro';
+  src: url("../../app/lib/fonts/Mark/MarkPro-Light.woff") format("woff"), url("../../app/lib/fonts/Mark/MarkPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
 
 /* -------------------------------------------------------- */
 /* ############### 6. TEMPLATE PAGES STYLES ############### */
@@ -13021,7 +13284,7 @@ textarea.parsley-success:focus {
     border-left: 1px solid #ced4da; }
 
 .card-dash-chart-one .right-panel .slim-card-title {
-  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-family: "MarkPro", "Helvetica Neue", Arial, sans-serif;
   letter-spacing: 1px;
   font-size: 12px;
   margin-bottom: 25px; }
@@ -13151,7 +13414,7 @@ textarea.parsley-success:focus {
     margin-bottom: 25px; }
     .dashboard-chart-one .card-revenue h1 span {
       font-size: 14px;
-      font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+      font-family: "MarkPro", "Helvetica Neue", Arial, sans-serif;
       font-weight: 400;
       margin-left: 10px;
       letter-spacing: normal; }
@@ -34143,8 +34406,11 @@ a.hover-white-8:hover, a.hover-white-8:focus {
 .tx-mont {
   font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif; }
 
-.tx-mark {
+.tx-lato {
   font-family: "Lato", "Helvetica Neue", Arial, sans-serif; }
+
+.tx-mark {
+  font-family: "MarkPro", "Helvetica Neue", Arial, sans-serif; }
 
 .tx-sserif {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
