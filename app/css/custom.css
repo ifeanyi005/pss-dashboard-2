@@ -163,3 +163,15 @@ body .signin-title-primary-2{
 .pss-blue p {
     margin-bottom: 0px !important;
 }
+
+.signup-login {
+        position: absolute;
+        bottom: 15%;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+.final {
+        bottom: 0;
+    }
