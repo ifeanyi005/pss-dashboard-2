@@ -150,7 +150,13 @@ body .signin-title-secondary {
     margin-bottom: 0px;
     color: #697788;
     font-size: 18px;
-
+}
+body .signup-tc {
+    margin-bottom: 0px;
+    color: #697788;
+    font-size: 14px;
+    width: calc(100% - 70px);
+    margin-top: 20px;
 }
 body .signin-title-primary-2{
     margin-bottom: 0px;
@@ -175,3 +181,35 @@ body .signin-title-primary-2{
 .final {
         bottom: 0;
     }
+
+body .slim-mainpanel {
+
+        background: url(../assets/hero-bg.png);
+        background-position: 10px 50px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+
+body div#password .form-group {
+    max-width: calc(100% - 3rem);
+    }
+body #password .input-group-text {
+    align-items: unset;
+    padding: .6rem 0.75rem;
+    background-color: transparent;
+    border: 0px;
+    color: #444971;
+}
+body #password .input-group-text .fa {
+    font-size: 25px;
+}
+
+.signup-success img {
+    margin: 40px auto;
+    height: 8rem;
+}
+
+body .signup-logo a img {
+    height: 52px
+}
