@@ -184,9 +184,9 @@ body .signin-title-primary-2{
 
 body .slim-mainpanel {
 
-        background: url(../assets/hero-bg.png);
+        background: url(../assets/hero-bg.svg);
         background-position: 10px 50px;
-        background-size: contain;
+        /* background-size: contain; */
         background-repeat: no-repeat;
     }
 
@@ -213,3 +213,132 @@ body #password .input-group-text .fa {
 body .signup-logo a img {
     height: 52px
 }
+
+body div#pss-user-otp input[type="password"] {
+    overflow: visible;
+    width: 14%;
+    border: 1px solid #DEE5E9;
+    outline: 0;
+    background: transparent;
+    text-align: center;
+    padding: 3px;
+    font-size: 30px;
+    color: #444971;
+    border-radius: 4px;
+    margin-right: 7px;
+}
+body div#pss-user-otp input[type="password"]:focus,  
+body div#pss-user-otp input[type="password"]:active{
+
+    outline: none;
+    border: 2px solid #0744DD;
+    border-radius: 4px;
+}
+
+
+.pss-header-h-1 {
+    color: #444971;
+    font-family: MarkPro;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+    line-height: 38px;
+  }
+  .pss-header-p {
+    color: #444971;
+    font-family: MarkPro;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+    line-height: 38px;
+  }
+@media (min-width:740px) {
+  .pss-header {
+      max-width: 63%;
+  }
+}
+
+.dashboard-search {
+    display: inline-block;
+}
+
+body .dashboard-search .pss-search-header {
+    flex-direction: unset;
+}
+
+body .dashboard-search .pss-search-header .form-control {
+    padding-left: 10px;
+}
+
+body .dashboard-search .btn {
+    margin: -2px;
+    border-radius: 0px 6px 6px 0px;
+    background-color: #DFE7FA;
+    color: #0744DD;
+
+}
+
+body .dashboard-search input.form-control {
+    padding: 0px;
+}
+
+body .pssCard {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    box-shadow: 0 4px 14px 0 rgba(7, 68, 221, 0.1);
+    transition: 0.3s;
+}
+
+
+body .card {
+    transition: display 0.3s ease-in-out;
+}
+
+
+body .pssCard img.user-brands  {
+    max-height: 20px;
+    margin-bottom: 8px;
+    
+}
+
+
+body .user-brand-text {
+    color: #637381;
+    transition: 0.3s;
+}
+
+body .user-brand-name {
+    color: #222;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+body .pssCard .card-body {
+    padding-bottom:0px;
+    transition: 0.3s;
+}
+
+body .pssCard .card-link {
+    text-align: center;
+    background-color: rgba(7, 68, 221, 0.1);
+    padding: 5px;
+    display: none;
+    transition: 0.3s;
+}
+body .pssCard .card-link a {
+    color: #0744DD;
+}
+
+body .card:hover .user-brand-text {
+    display: none;
+}
+body .card:hover .card-link {
+    display: block;
+}
+
+body .pssCard:hover {
+    border: 1px solid #0744DD;
+}
+
