@@ -184,7 +184,7 @@ body .signin-title-primary-2{
 
 body .slim-mainpanel {
 
-        background: url(../assets/hero-bg.svg);
+        background: url(../assets/hero-bg.svg) ;
         background-position: 10px 50px;
         /* background-size: contain; */
         background-repeat: no-repeat;
