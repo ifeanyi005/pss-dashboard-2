@@ -23,6 +23,20 @@ body .brand a img {
     height: 52px
 }
 
+.orange-color {
+    color: #56A81E !important;
+}
+
+.blue-color {
+    color: #0744DD !important;
+}
+
+.light-button {
+background-color: rgba(7, 68, 221, 0.1);
+  border-radius: 3px;
+  /* width: 320px; */
+  height: 40px;
+}
 
 /* ---------- HEADER ----------  */
 body .logged-user img {
@@ -45,7 +59,7 @@ body .search-box .form-control {
 
 body .search-box.pss-search-header {
     flex-direction: row-reverse;
-    border: 0px; 
+    border: 0px;
     border-radius: 6px;
     box-shadow: 0 1px 3px 1px rgba(127, 131, 155, 0.15), 0 1px 2px 0 rgba(127, 131, 155, 0.3);
 }
@@ -85,7 +99,7 @@ body .nav-sidebar {
 }
 
 body .sidebar-nav-link, body .sidebar-nav-item:first-child {
-    
+
     color: #353F69;;
     border-bottom: 0px;
 }
@@ -100,8 +114,8 @@ body .sidebar-nav-link.active i {
     color: #0744DD;
 }
 
-body .sidebar-nav-link i, 
-body .sidebar-nav-link i.ion-ios-book-outline, 
+body .sidebar-nav-link i,
+body .sidebar-nav-link i.ion-ios-book-outline,
 body .sidebar-nav-link i.ion-ios-chatboxes-outline {
     font-size: 18px;
 }
@@ -227,7 +241,7 @@ body div#pss-user-otp input[type="password"] {
     border-radius: 4px;
     margin-right: 7px;
 }
-body div#pss-user-otp input[type="password"]:focus,  
+body div#pss-user-otp input[type="password"]:focus,
 body div#pss-user-otp input[type="password"]:active{
 
     outline: none;
@@ -238,7 +252,7 @@ body div#pss-user-otp input[type="password"]:active{
 
 .pss-header-h-1 {
     color: #444971;
-    font-family: MarkPro;
+    /* font-family: MarkPro; */
     font-size: 32px;
     font-weight: 700;
     letter-spacing: -0.2px;
@@ -246,7 +260,6 @@ body div#pss-user-otp input[type="password"]:active{
   }
   .pss-header-p {
     color: #444971;
-    font-family: MarkPro;
     font-size: 32px;
     font-weight: 700;
     letter-spacing: -0.2px;
@@ -309,7 +322,7 @@ body .card {
 body .pssCard img.user-brands  {
     max-height: 20px;
     margin-bottom: 8px;
-    
+
 }
 
 
@@ -352,3 +365,37 @@ body .pssCard:hover {
     border: 1px solid #0744DD;
 }
 
+.credit-bureau-color {
+    color: #444971;
+}
+
+.pss-header-h-2 {
+  color: #1B314B;
+  /* font-family: MarkPro; */
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.25px;
+  line-height: 29px;
+  width: 246px;
+  text-align: left;
+}
+
+.pssCard .pss-header-p {
+    font-size: 48px !important;
+}
+
+.pssCard .dashboard-card-title {
+    color: #222;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.pssCard sup {
+    font-size: 24px;
+}
+
+.upload-section button {
+    font-size: 16px;
+    padding: 0 50px;
+}
