@@ -290,6 +290,16 @@ body .pssCard {
     transition: 0.3s;
 }
 
+body .card .user-brand-text{
+    display: block;
+    transition: 0.3s;
+}
+
+body .card .card-link{
+    display: none;
+    transition: 0.3s;
+}
+
 
 body .card {
     transition: display 0.3s ease-in-out;
