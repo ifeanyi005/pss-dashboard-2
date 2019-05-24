@@ -1,3 +1,311 @@
+/* ---------- FORM STYLING----------  */
+
+
+#status-div {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: none;
+  }
+  
+  .floating-label {
+    margin-top: 20px;
+  }
+  
+  label.error {
+    display: block;
+    position: absolute;
+    top: 50px !important;
+    left: 3px !important;
+    font-size: 12px !important;
+    z-index: 1;
+    color: red !important;
+    font-weight: 600;
+  }
+  
+  #message-area label.error {
+    display: block;
+    position: absolute;
+    top: 190px !important;
+    left: 3px !important;
+    font-size: 12px !important;
+    z-index: 1;
+    color: red !important;
+    font-weight: 600;
+  }
+  
+  input.error, select.error {
+    display: block;
+    border: 1px solid red;
+  }
+  
+  #submit {
+    margin-top: 10px;
+  }
+
+  .btn-fill-md {
+    transition: color 0.25s ease;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+.formPSSbtn {
+    background: #0744DD;
+    margin: auto;
+    line-height: 1.75;
+    font-family: MarkPro;
+    font-size: 16px;
+    background-image: linear-gradient(180deg, #1179F0 0%, #0744DD 100%);
+    border: 1px solid #0744DD;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px 0 rgba(15, 115, 238, 0.52);
+
+}
+
+button.formPSSbtn {
+    width: 100%;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.input-group__label {
+    background: #ffffff;
+    color: #999999;
+    font-size: .75rem;
+    left: 0;
+    margin-left: .5rem;
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    position: absolute;
+    top: 0;
+}
+
+.input-group__field {
+    border-color: #eeeeee;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+}
+
+.input-group__field:focus {
+    outline: 0;
+}
+
+
+.floating-form {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/****  floating-Lable style start ****/
+.floating-label {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.floating-input,
+.floating-select {
+    font-size: 18px;
+    font-family: "MarkPro", sans-serif;
+    padding: 0px 16px;
+    display: block;
+    width: 100%;
+    height: 48px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #757575;
+    border: 1px solid #444971;
+    border-radius: 4px;
+    color: #444971;
+}
+
+.floating-input:focus,
+.floating-select:focus {
+    outline: none;
+    border: 2px solid #0744DD;
+    ;
+    border-radius: 4px;
+}
+
+.floating-label label {
+    color: #999;
+    font-size: 14px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 12px;
+    top: 8px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+    color: #48446F;
+    font-family: "MarkPro", sans-serif;
+    font-size: 18px;
+    opacity: 0.6;
+}
+
+.floating-input:not(:placeholder-shown)~label {
+    top: -10px;
+    font-size: 14px;
+    color: #444874;
+    opacity: 1;
+    background: white;
+    padding: 0px 5px;
+}
+
+.floating-input:focus~label {
+    top: -10px;
+    font-size: 14px;
+    color: #0744DD;
+    ;
+    ;
+    opacity: 1;
+    background: white;
+    padding: 0px 5px;
+}
+
+.floating-select:active~label,
+.floating-select:visited~label,
+.floating-select:not(:placeholder-shown)~label {
+    top: -10px;
+    font-size: 14px;
+    color: #444874;
+    opacity: 1;
+    background: white;
+    padding: 0px 5px;
+}
+
+.floating-select:focus~label,
+.floating-select:not([value=""]):valid~label {
+    top: -18px;
+    font-size: 14px;
+    top: -10px;
+    font-size: 14px;
+    color: #0744DD;
+    ;
+    opacity: 1;
+    background: white;
+    padding: 0px 5px;
+}
+
+/* active state */
+.floating-input:focus~.bar:before,
+.floating-input:focus~.bar:after,
+.floating-select:focus~.bar:before,
+.floating-select:focus~.bar:after {
+    width: 50%;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.floating-textarea {
+    min-height: 30px;
+    height: 180px;
+    overflow: hidden;
+    overflow-x: hidden;
+    padding-top: 12px;
+}
+
+/* highlighter */
+.highlight {
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 15%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* active state */
+.floating-input:focus~.highlight,
+.floating-select:focus~.highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+}
+
+/* animation */
+@-webkit-keyframes inputHighlighter {
+    from {
+        background: #fff;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@-moz-keyframes inputHighlighter {
+    from {
+        background: #fff;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #fff;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+/****  floating-Lable style end ****/
+
+/***   daniel - Fork me friend - style   ***/
+.floating-credit {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: #aaa;
+    font-size: 13px;
+    font-family: arial, sans-serif;
+}
+
+.floating-credit a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.floating-credit a:hover {
+    border-bottom: 1px dotted #f8f8f8;
+}
+
+.floating-heading {
+    position: fixed;
+    color: #aaa;
+    font-size: 20px;
+    font-family: arial, sans-serif;
+}
+
+
 /* ---------- GENERAL----------  */
 
 body {
@@ -198,7 +506,7 @@ body .signin-title-primary-2{
 
 body .slim-mainpanel {
 
-        background: url(../assets/hero-bg.svg) ;
+        background: url(../../assets/hero-bg.svg) ;
         background-position: 10px 50px;
         /* background-size: contain; */
         background-repeat: no-repeat;
@@ -398,4 +706,8 @@ body .pssCard:hover {
 .upload-section button {
     font-size: 16px;
     padding: 0 50px;
+}
+
+body .dashboard-inner {
+    padding-left: 30px;
 }
