@@ -81,22 +81,85 @@
         <div class="dashboard-inner">
         <div class="pss-header mg-b-50 mg-t-50">
           <h2 class="pss-header-h-1 ">So fast! We are done.</h2>
-          <p class="signin-title-secondary">Checking your eligibility won't affect your credit <br/>score. You'll get a decision instantly.</p>
+          <p class="signin-title-secondary">Here are your results</p>
         </div>
-            <div class="pd-20 credit-check">
-                <img src="../assets/credit-check.svg" alt="credit-check">
-            </div>
-            <form action="">
-                    <button class="btn-fill-md formPSSbtn otp-btn" id="">Run credit check</button>
-            </form>
-            
-                          
 
-                  </div><!-- col -->
-                  <div class="col-md mg-t-20 mg-md-t-0">
+        <div class="row mg-t-30">
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card pssCard bd-0 mg-b-30 pd-y-15">
+              <div class="card-body ">
+                <p class="dashboard-card-title">Your PSS Score</p>
+                <p class="pss-header-p orange-color pd-b-20">88%</p>
+              </div>
+            </div><!-- card -->
+          </div><!-- col -->
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card pssCard bd-0 mg-b-30 pd-y-15">
+              <div class="card-body ">
+                <p class="dashboard-card-title">Credit Bureau Score</p>
+                <p class="pss-header-p credit-bureau-color pd-b-20">54%</p>
+              </div>
+            </div><!-- card -->
+          </div><!-- col -->
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card pssCard bd-0 mg-b-30 pd-y-15">
+              <div class="card-body ">
+                <p class="dashboard-card-title">Amount you Pre-qualify for*</p>
+                <p class="pss-header-p blue-color pd-b-20"><sup>N</sup>500,000</p>
+              </div>
+            </div><!-- card -->
+          </div><!-- col -->
+        </div><!-- row -->
+
+        <div class="mg-b-8 mg-t-20">
+          <h2 class="pss-header-h-2">Not high enough?</h2>
+          <p class="signin-title-secondary">You can upload supporting documents to help increase your PSS score<br />
+            and the amount e.g employment contract, bank statement, guarantor letter</p>
+        </div>
+
+        <div class="row pd-y-15">
+         <div class="col-md-8">
+             <div class="row">
+                 <div class="col-md-9">
+                     <div class="row">
+                         <div class="col-1 upload-img">
+                             <img src="../assets/pdf.svg" alt="" />
+                         </div>
+                         <div class="col-11 m-auto"> 
+                            <div class="pd-l-10">
+                                    <p style="font-size:16px; color: #222D4F;" >Employment_Contract_2019_14…pdf</p>
+                                    <p class="user-brand-text-2">22MB</p></div>
+                            </div> 
+                            
+                     </div>
                     
-                  </div><!-- col -->
-                </div><!-- row -->
+                 </div>
+                 <div class="col-md-3 m-auto">
+                     <a href="" class="pss-blue">View document <i class="fa fa-close pd-l-10" style="color: #C51D1D;"></i> </a>
+                 </div>
+             </div>
+         </div>
+         <div class="col-md-4"></div>
+        </div>
+
+        <form action="">
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="customFile">
+                <label class="custom-file-label pss-blue" for="customFile"> <img class="pd-r-5" src="../assets/upload.svg" alt=""> Upload more documents</label>
+
+                <div class="row">
+
+                        <div class="col-6 m-auto pss-blue ">
+                          <p>Cancel</p>
+                        </div>
+      
+                        <div class="col-6">
+                          <button class="btn-fill-md formPSSbtn" id="">Save and submit</button>
+                        </div>
+      
+                      </div>
+            </div>
+        </form>
 
       </div>
       </div><!-- container -->
