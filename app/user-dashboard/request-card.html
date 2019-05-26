@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content=" ">
+    <meta name="keywords" content="">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon">
+
+    <!-- Meta -->
+    <meta name="description" content="PSS User Dashboard">
+    <meta name="author" content="PSS">
+
+    <title>PSS User</title>
+
+    <!-- vendor css -->
+    <link href="../../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="../../lib/Ionicons/css/ionicons.css" rel="stylesheet">
+    <link href="../../lib/chartist/css/chartist.css" rel="stylesheet">
+    <link href="../../lib/rickshaw/css/rickshaw.min.css" rel="stylesheet">
+    <link href="../../lib/perfect-scrollbar/css/perfect-scrollbar.min.css" rel="stylesheet">
+
+    <!-- Slim CSS -->
+    <link rel="stylesheet" href="../../css/custom.css">
+    <link rel="stylesheet" href="../../css/slim.css">
+    <script src="../../lib/jquery/js/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#modaldemo4").modal('show');
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <div class="slim-header with-sidebar">
+        <div class="container-fluid">
+            <div class="slim-header-left">
+                <h2 class="slim-logo"><a href="../user-dashboard/index.html"> <img src="../../assets/pss-user-logo.svg"
+                            alt="PSS User Logo" /></a></h2>
+                <a href="" id="slimSidebarMenu" class="slim-sidebar-menu"><span></span></a>
+                <div class="search-box pss-search-header">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <button class="btn btn-primary"><i class="fa fa-search"></i></button>
+                </div><!-- search-box -->
+            </div><!-- slim-header-left -->
+            <div class="slim-header-right">
+                <div class="">
+                    <a href="#" class="logged-user" data-toggle="dropdown">
+                        <div class="user-initials">O</div>
+                        <span>Oluwatobi Akindunjoye</span>
+
+                    </a>
+                </div><!-- dropdown -->
+            </div><!-- header-right -->
+        </div><!-- container-fluid -->
+    </div><!-- slim-header -->
+
+    <div class="slim-body">
+        <div class="slim-sidebar">
+
+            <ul class="nav nav-sidebar">
+                <li class="sidebar-nav-item">
+                    <a href="../user-dashboard/index.html" class="sidebar-nav-link "><i
+                            class="icon ion-ios-home-outline"></i>
+                        Dashboard</a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a href="../user-dashboard/shop.html" class="sidebar-nav-link active "><i
+                            class="icon ion-ios-chatboxes-outline"></i> Shop</a>
+                </li>
+                <li class="sidebar-nav-item ">
+                    <a href="../user-dashboard/loan.html" class="sidebar-nav-link"><i
+                            class="icon ion-ios-book-outline"></i> Loans</a>
+                </li>
+                <li class="sidebar-nav-item ">
+                    <a href="" class="sidebar-nav-link"><i class="icon ion-ios-filing-outline"></i> Settings</a>
+                </li>
+            </ul>
+        </div><!-- slim-sidebar -->
+
+        <div class="slim-mainpanel">
+            <div class="container">
+                <div class="slim-pageheader">
+                    <h6 class="slim-pagetitle dashboard-title">Dashboard</h6>
+                </div><!-- slim-pageheader -->
+                <div class="shop-card dashboard-card-bg pd-30">
+                    <div class="row">
+                        <div class="col-sm-7 signin-title-secondary "
+                            style="color: #212B35; font-family: MarkPro; font-size: 18px;font-weight: 500;">
+                            <p class="pd-md-b-10">Amount you Prequalify for* </p>
+                        </div>
+                        <div class="col-sm-5">
+                            <p class="pss-header-p blue-color shop-amount">
+                                <sup style="font-size: calc(48px/2);">N</sup>500,000</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="pss-header mg-b-30 mg-t-20">
+                    <h2 class="pss-header-h-1 ">We partnered thousands of stores</h2>
+                </div>
+
+                <div class="row  ">
+                    <div class="col-md-8">
+                        <div class="dashboard-search">
+                            <div class="search-box pss-search-header">
+                                <select class="form-control select2" id="shop-cat" data-placeholder="All Category">
+                                    <option label="All Category"></option>
+                                    <option value="Home">Home</option>
+                                    <option value="Fashion">Fashion</option>
+                                    <option value="Food">Food</option>
+                                    <option value="Grocery">Grocery</option>
+                                    <option value="Electronics">Electronics</option>
+                                    <option value="Schooling">Schooling</option>
+                                </select>
+                                <input type="text" class="form-control"
+                                    placeholder="Search all stores by name and category">
+                                <button class="btn btn-primary"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                    </div>
+
+                </div>
+                <div class="row pd-t-30 ">
+                    <div class="col-md-8">
+                        <p class="signin-title-primary-2" style="font-weight: 500;">Featured curated offers</p>
+                    </div>
+                    <div class="col-md-4 text-right">
+                        <p style="margin-bottom: 0px;"><span class="pss-blue pd-l-10 "><a class="pss-blue" href="">See
+                                    all
+                                    →</a></span></p>
+                    </div>
+                </div>
+
+
+
+                <div class="row mg-t-20">
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <a href="" data-toggle="modal" data-target="#modaldemo4">
+                            <div class="card pssCard bd-0 mg-b-30">
+                                <div class="card-body ">
+                                    <img class="user-brands" src="../../assets/logo/Iroko-tv-logo.svg"
+                                        alt="Iroko-tv-logo">
+                                    <p class="user-brand-name">Iroko TV</p>
+                                    <p class="user-brand-text-2 tx-small mg-b-10">Get between 0% - 100% APR on Iroko
+                                        only on PSS</p>
+
+                                </div>
+
+
+                            </div><!-- card -->
+                        </a>
+                    </div><!-- col -->
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <a href="" data-toggle="modal" data-target="#modaldemo4">
+                            <div class="card pssCard bd-0 mg-b-30">
+                                <div class="card-body ">
+                                    <img class="user-brands" src="../../assets/logo/barter-logo.svg" alt="barter-logo">
+                                    <p class="user-brand-name">Barter</p>
+                                    <p class="user-brand-text-2 tx-small mg-b-10">Get between 0% - 100% APR on Iroko
+                                        only on PSS</p>
+                                </div>
+
+                            </div><!-- card -->
+                        </a>
+                    </div><!-- col -->
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <div class="card pssCard bd-0 mg-b-30">
+                            <div class="card-body ">
+                                <img class="user-brands" src="../../assets/logo/Fliqpay-Logo.svg" alt="Fliqpay-logo">
+                                <p class="user-brand-name">Fliqpay</p>
+                                <p class="user-brand-text-2 tx-small mg-b-10">Get between 0% - 100% APR on Iroko only on
+                                    PSS</p>
+                            </div>
+
+                        </div><!-- card -->
+                    </div><!-- col -->
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <div class="card pssCard bd-0 mg-b-30">
+                            <div class="card-body">
+                                <img class="user-brands" src="../../assets/logo/Wallet.ng-Logo.svg" alt="Wallet-logo">
+                                <p class="user-brand-name">Wallet Ng</p>
+                                <p class="user-brand-text-2 tx-small mg-b-10">Get between 0% - 100% APR on Iroko only on
+                                    PSS</p>
+                            </div>
+
+                        </div><!-- card -->
+                    </div><!-- col -->
+
+                </div><!-- row -->
+
+
+
+                <div class="row pd-t-10 ">
+                    <div class="col-md-8">
+                        <p class="signin-title-primary-2" style="font-weight: 500;">Online stores</p>
+                    </div>
+                    <div class="col-md-4 text-right">
+                        <p style="margin-bottom: 0px;"> <span class="pss-blue pd-l-10 "><a class="pss-blue" href="">See
+                                    all
+                                    →</a></span></p>
+                    </div>
+                </div>
+
+
+
+                <div class="row mg-t-20">
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <div class="card pssCard bd-0 mg-b-30">
+                            <div class="card-body ">
+                                <img class="user-brands" src="../../assets/logo/Iroko-tv-logo.svg" alt="Iroko-tv-logo">
+                                <p class="user-brand-name">Iroko TV</p>
+                                <p class="user-brand-text-2 tx-small mg-b-10">Get between 0% - 100% APR on Iroko only on
+                                    PSS</p>
+
+                            </div>
+
+                        </div><!-- card -->
+                    </div><!-- col -->
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <div class="card pssCard bd-0 mg-b-30">
+                            <div class="card-body ">
+                                <img class="user-brands" src="../../assets/logo/barter-logo.svg" alt="barter-logo">
+                                <p class="user-brand-name">Barter</p>
+                                <p class="user-brand-text-2 tx-small mg-b-10">Get between 0% - 100% APR on Iroko only on
+                                    PSS</p>
+                            </div>
+
+                        </div><!-- card -->
+                    </div><!-- col -->
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <div class="card pssCard bd-0 mg-b-30">
+                            <div class="card-body ">
+                                <img class="user-brands" src="../../assets/logo/Fliqpay-Logo.svg" alt="Fliqpay-logo">
+                                <p class="user-brand-name">Fliqpay</p>
+                                <p class="user-brand-text-2 tx-small mg-b-10">Get between 0% - 100% APR on Iroko only on
+                                    PSS</p>
+                            </div>
+
+                        </div><!-- card -->
+                    </div><!-- col -->
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <div class="card pssCard bd-0 mg-b-30">
+                            <div class="card-body">
+                                <img class="user-brands" src="../../assets/logo/Wallet.ng-Logo.svg" alt="Wallet-logo">
+                                <p class="user-brand-name">Wallet Ng</p>
+                                <p class="user-brand-text-2 tx-small mg-b-10">Get between 0% - 100% APR on Iroko only on
+                                    PSS</p>
+                            </div>
+
+                        </div><!-- card -->
+                    </div><!-- col -->
+
+                </div><!-- row -->
+
+
+                <div id="modaldemo4" class="modal fade shopModal-body">
+                    <div class="modal-dialog" style="max-width: 641px;" role="document">
+                        <div class="modal-content tx-size-sm requestModal">
+                            <div class="modal-body ">
+                                <div class="pd-y-30 pd-x-40">
+                                    <a href="../user-dashboard/shop.html"> <img src="../assets/back-arrow.svg" alt=""
+                                            style="max-height: 15px;"></a>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+
+                                    <h4 class="pss-header-h-1  tx-semibold mg-t-10 mg-b-5 ">Here's your one-time use
+                                        digital card</h4>
+                                    <p class="dashboard-card-title" style="color:  #697788;"><b>Please use your card
+                                            below
+                                        </b>Please use your card below to
+                                        pay when you're checking
+                                        out on IrokoTV.</p>
+                                    <p class="dashboard-card-title pd-t-20" style="color:  #697788;"> Card worth
+                                        <b>N300,000</b></p>
+
+                                    <div class="dashboard-card-bg mg-t-20">
+                                        <div class="row pd-t-40 pd-x-40 pd-md-b-20">
+                                            <div class="col-6">
+                                                <p class="signin-title-secondary-2" style="color: #48446F;">
+                                                    454367274747383
+                                                    <span> <img src="" alt=""> </span>
+                                                </p>
+                                                <p class="pss-gray">Expires 05/21</p>
+                                                <p class=" signin-title-secondary-2 pd-t-30 "
+                                                    style="font-size: 400; color: #48446F;">
+                                                    CVV
+                                                    <b>345</b>
+                                                </p>
+                                            </div>
+                                            <div class="col-6 m-auto text-center">
+                                                <img class="img-responsive" src="../assets/visa.png" alt="visa logo">
+                                            </div>
+                                        </div>
+
+                                        <hr>
+
+                                        <div class="row pd-t-20 pd-x-40 pd-md-b-30">
+                                            <div class="col-6 ">
+                                                <p>Billing Address</p>
+                                                <p>City</p>
+                                                <p>State</p>
+                                                <p>Country</p>
+                                                <p>Zip Code</p>
+
+                                            </div>
+                                            <div class="col-6">
+                                                <p>43, Ikoyi Road</p>
+                                                <p>Ikoyi</p>
+                                                <p>Lagos</p>
+                                                <p>Nigeria</p>
+                                                <p>23401</p>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+
+                                <hr />
+                                <div class="pd-y-0 pd-x-40">
+                                    <div class="row">
+
+                                        <div class="col-8">
+                                            <p class="signin-title-secondary-2" style="color: #48446F;">Total Loan
+                                                Amount</p>
+                                            <p class="tx-sm-11-force pss-gray">Pay Small Small Service fee and Insurance
+                                                fee will
+                                                be deducted
+                                                immediately
+                                            </p>
+                                        </div>
+                                        <div class="col-4">
+                                            <P class="signin-title-secondary-2 text-right" style="color: #48446F;">
+                                                N349,440</P>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr />
+
+                                <div class="pd-y-0 pd-x-40 text-center">
+                                    <div class="mg-y-15 upload-section">
+                                        <button class="btn light-button blue-color">Send details to your email</button>
+                                    </div>
+                                </div>
+
+                            </div><!-- modal-body -->
+
+                        </div><!-- modal-content -->
+                    </div><!-- modal-dialog -->
+                </div><!-- modal -->
+
+            </div><!-- container -->
+
+        </div><!-- slim-mainpanel -->
+    </div><!-- slim-body -->
+
+
+    <script src="../../lib/popper.js/js/popper.js"></script>
+    <script src="../../lib/bootstrap/js/bootstrap.js"></script>
+    <script src="../../lib/jquery.cookie/js/jquery.cookie.js"></script>
+    <script src="../../lib/chartist/js/chartist.js"></script>
+    <script src="../../lib/d3/js/d3.js"></script>
+    <script src="../../lib/rickshaw/js/rickshaw.min.js"></script>
+    <script src="../../lib/jquery.sparkline.bower/js/jquery.sparkline.min.js"></script>
+    <script src="../../lib/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js"></script>
+
+    <script src="../../js/ResizeSensor.js"></script>
+    <script src="../../js/dashboard.js"></script>
+    <script src="../../js/slim.js"></script>
+</body>
+
+</html>

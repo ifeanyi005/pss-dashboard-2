@@ -36,7 +36,8 @@
   <div class="slim-header with-sidebar">
     <div class="container-fluid">
       <div class="slim-header-left">
-        <h2 class="slim-logo"><a href="/user-dashboard/index.html"> <img src="../../assets/pss-user-logo.svg" alt="PSS User Logo" /></a></h2>
+        <h2 class="slim-logo"><a href="/user-dashboard/index.html"> <img src="../../assets/pss-user-logo.svg"
+              alt="PSS User Logo" /></a></h2>
         <a href="" id="slimSidebarMenu" class="slim-sidebar-menu"><span></span></a>
         <div class="search-box pss-search-header">
           <input type="text" class="form-control" placeholder="Search">
@@ -62,10 +63,12 @@
           <a href="" class="sidebar-nav-link active"><i class="icon ion-ios-home-outline"></i> Dashboard</a>
         </li>
         <li class="sidebar-nav-item">
-          <a href="page-messages.html" class="sidebar-nav-link"><i class="icon ion-ios-chatboxes-outline"></i> Shop</a>
+          <a href="../user-dashboard/shop.html" class="sidebar-nav-link"><i class="icon ion-ios-chatboxes-outline"></i>
+            Shop</a>
         </li>
         <li class="sidebar-nav-item ">
-          <a href="" class="sidebar-nav-link"><i class="icon ion-ios-book-outline"></i> Loans</a>
+          <a href="../user-dashboard/loan.html" class="sidebar-nav-link"><i class="icon ion-ios-book-outline"></i>
+            Loans</a>
         </li>
         <li class="sidebar-nav-item ">
           <a href="" class="sidebar-nav-link"><i class="icon ion-ios-filing-outline"></i> Settings</a>
@@ -79,40 +82,41 @@
           <h6 class="slim-pagetitle dashboard-title">Hi Oluwatobi</h6>
         </div><!-- slim-pageheader -->
         <div class="dashboard-inner">
-        <div class="pss-header mg-b-50 mg-t-50">
-          <span class=" mg-b-10"> <a href="../user-dashboard/index.html">  <img src="../assets/back-arrow.svg" alt=""></a> </span>
-          <h2 class="pss-header-h-1 ">Update your profile</h2>
+          <div class="pss-header mg-b-50 mg-t-50">
+            <span class=" mg-b-10"> <a href="../user-dashboard/index.html"> <img src="../assets/back-arrow.svg"
+                  alt=""></a> </span>
+            <h2 class="pss-header-h-1 ">Update your profile</h2>
+          </div>
+
+          <div class="row  mg-t-30 mg-l-0 mg-r-0">
+            <div class="col-md dashboard-card-bg pd-40">
+              <h2 class="signin-title-primary-2">Enter email address</h2>
+              <p class="signin-title-secondary pd-t-10">This is strictly for communication and that a code
+                will be sent to the email for confirmation</p>
+
+              <div class="">
+                <div class="alert" id="status-div"></div>
+                <form autocomplete="off" action="../user-dashboard/email-verification.html" method="" id="contact-form"
+                  novalidate="novalidate">
+                  <div class="floating-form">
+                    <div class="floating-label">
+                      <input class="floating-input" type="text" placeholder="" name="pss-email" autofocus>
+                      <span class="highlight"></span>
+                      <label>Email address</label>
+                    </div>
+                    <button class="btn-fill-md formPSSbtn " id="submit">Submit email</button>
+                  </div>
+
+                </form>
+                <!-- signin-box -->
+              </div>
+            </div><!-- col -->
+            <div class="col-md mg-t-20 mg-md-t-0">
+
+            </div><!-- col -->
+          </div><!-- row -->
+
         </div>
-
-                <div class="row  mg-t-30 mg-l-0 mg-r-0">
-                  <div class="col-md dashboard-card-bg pd-40">
-                      <h2 class="signin-title-primary-2">Enter email address</h2>
-                      <p class="signin-title-secondary pd-t-10">This is strictly for communication and that a code 
-                          will be sent to the email for confirmation</p>
-
-                          <div class="">
-                                <div class="alert" id="status-div"></div>
-                                <form autocomplete="off" action="../user-dashboard/email-verification.html" method="" id="contact-form" novalidate="novalidate">
-                                    <div class="floating-form">
-                                        <div class="floating-label">
-                                            <input class="floating-input" type="text" placeholder=""
-                                                name="pss-email" autofocus>
-                                            <span class="highlight"></span>
-                                            <label>Email address</label>
-                                        </div>
-                                        <button class="btn-fill-md formPSSbtn " id="submit">Submit email</button>
-                                    </div>
-                    
-                                </form>
-                            <!-- signin-box -->
-                              </div>
-                  </div><!-- col -->
-                  <div class="col-md mg-t-20 mg-md-t-0">
-                    
-                  </div><!-- col -->
-                </div><!-- row -->
-
-      </div>
       </div><!-- container -->
 
 

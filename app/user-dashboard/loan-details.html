@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content=" ">
+    <meta name="keywords" content="">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon">
+
+    <!-- Meta -->
+    <meta name="description" content="PSS User Dashboard">
+    <meta name="author" content="PSS">
+
+    <title>PSS User</title>
+
+
+
+    <!-- vendor css -->
+    <link href="../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="../lib/Ionicons/css/ionicons.css" rel="stylesheet">
+    <link href="../lib/datatables/css/jquery.dataTables.css" rel="stylesheet">
+    <link href="../lib/select2/css/select2.min.css" rel="stylesheet">
+    <script src="../../lib/jquery/js/jquery.js"></script>
+
+    <!-- Slim CSS -->
+    <link rel="stylesheet" href="../../css/custom.css">
+    <link rel="stylesheet" href="../../css/slim.css">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#modaldemo4").modal('show');
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="slim-header with-sidebar">
+        <div class="container-fluid">
+            <div class="slim-header-left">
+                <h2 class="slim-logo"><a href="/user-dashboard/index.html"> <img src="../../assets/pss-user-logo.svg"
+                            alt="PSS User Logo" /></a></h2>
+                <a href="" id="slimSidebarMenu" class="slim-sidebar-menu"><span></span></a>
+                <div class="search-box pss-search-header">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <button class="btn btn-primary"><i class="fa fa-search"></i></button>
+                </div><!-- search-box -->
+            </div><!-- slim-header-left -->
+            <div class="slim-header-right">
+                <div class="">
+                    <a href="#" class="logged-user" data-toggle="dropdown">
+                        <div class="user-initials">O</div>
+                        <span>Oluwatobi Akindunjoye</span>
+                    </a>
+                </div><!-- dropdown -->
+            </div><!-- header-right -->
+        </div><!-- container-fluid -->
+    </div><!-- slim-header -->
+
+    <div class="slim-body">
+        <div class="slim-sidebar">
+
+            <ul class="nav nav-sidebar">
+                <li class="sidebar-nav-item">
+                    <a href="" class="sidebar-nav-link "><i class="icon ion-ios-home-outline"></i> Dashboard</a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a href="../user-dashboard/shop.html" class="sidebar-nav-link"><i
+                            class="icon ion-ios-chatboxes-outline"></i>
+                        Shop</a>
+                </li>
+                <li class="sidebar-nav-item ">
+                    <a href="../user-dashboard/loan.html" class="sidebar-nav-link active"><i
+                            class="icon ion-ios-book-outline"></i> Loans</a>
+                </li>
+                <li class="sidebar-nav-item ">
+                    <a href="../user-dashboard/loan.html" class="sidebar-nav-link"><i
+                            class="icon ion-ios-filing-outline"></i> Settings</a>
+                </li>
+            </ul>
+        </div><!-- slim-sidebar -->
+
+        <div class="slim-mainpanel">
+            <div class="container">
+                <div class="slim-pageheader">
+                    <h6 class="slim-pagetitle dashboard-title">Loans</h6>
+                </div><!-- slim-pageheader -->
+                <div class="dashboard-inner">
+                    <div class=" mg-b-50 mg-t-20">
+                        <h2 class="signin-title-secondary secondary-color">On your last loan: <b>you’ve paid back</b>
+                        </h2>
+                        <p class="loan-amount secondary-color pd-y-10">N116,480/N349,440</p>
+                        <div class="col-4 pd-l-0">
+                            <div class="progress ">
+                                <div class="progress-bar  progress-bar-xs wd-50p" role="progressbar" aria-valuenow="50"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <h2 class="signin-title-secondary secondary-color mg-t-15">Next due date: <b>Thu, 18 May 2019.
+                            </b>
+                            <span>We will notify you before it is due !</span></h2>
+                    </div>
+
+                    <div class="row mg-t-30">
+                        <div class="col-12 col-md-12 col-lg-4 mg-b-20">
+                            <div class="card pssCard loan-card pd-b-30 pd-x-15">
+                                <div class="card-body ">
+                                    <p class="dashboard-card-title pd-t-10">Active Loan <span
+                                            class="pss-blue">(IrokoTV)</span>
+                                    </p>
+                                    <p class="pss-header-p credit-bureau-color  pd-b-20">300,000</p>
+                                    <img src="../assets/logo/Iroko-tv-logo.svg" alt="">
+                                </div>
+                            </div><!-- card -->
+                        </div><!-- col -->
+                        <div class="col-12 col-md-12 col-lg-4 mg-b-20">
+                            <div class="card pssCard loan-card pd-b-30 pd-x-15">
+                                <div class="card-body ">
+                                    <p class="dashboard-card-title pd-t-10">18 Apr, 2019 - 18 Jun, 2019
+                                    </p>
+                                    <p class="pss-header-p credit-bureau-color  pd-b-20">3 months</p>
+
+                                </div>
+                            </div><!-- card -->
+                        </div><!-- col -->
+                        <div class="col-12 col-md-12 col-lg-4 mg-b-20">
+                            <div class="card pssCard loan-card pd-b-30 pd-x-15">
+                                <div class="card-body ">
+                                    <div class="row">
+                                        <div class="col-7 signin-title-secondary">
+                                            <p>Loan </p>
+                                            <p>Charges </p>
+                                            <p>Interest (monthly)</p>
+                                            <p class="pss-blue">Total Repayable</p>
+                                            <p>Monthly repayable</p>
+                                        </div>
+                                        <div class="col-5 signin-title-secondary">
+                                            <p>N300,000</p>
+                                            <p>N6,000</p>
+                                            <p>N12,480</p>
+                                            <p class="pss-blue">N349,440</p>
+                                            <p>N116,480</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- card -->
+                        </div><!-- col -->
+                    </div><!-- row -->
+
+                    <div class="mg-b-8 mg-t-20">
+                        <h2 class="loan-history">Loan History</h2>
+                    </div>
+
+                    <div class="table-wrapper table-responsive">
+                        <table id="datatable2" class="table display responsive nowrap">
+                            <thead>
+                                <tr>
+                                    <th class="">Voucher value</th>
+                                    <th class="">Store</th>
+                                    <th class="">Transaction ID</th>
+                                    <th class="">Start - end date</th>
+                                    <th class="">Duration</th>
+                                    <th class="">Total loan amount</th>
+                                    <th class="">Loan status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>IrokoTV</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <a href="" data-toggle="modal" data-target="#modaldemo4">
+                                            <div class="paid">
+                                                Paid</div>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Konga</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <a href="" data-toggle="modal" data-target="#modaldemo4">
+                                            <div class="paid">
+                                                Paid</div>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Bet9ja</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Fliqpay</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="inactive">Inactive</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>IrokoTV</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Konga</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Bet9ja</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Fliqpay</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="inactive">Inactive</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>IrokoTV</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Konga</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Bet9ja</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Fliqpay</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="inactive">Inactive</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>IrokoTV</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Konga</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Bet9ja</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Fliqpay</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="inactive">Inactive</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>IrokoTV</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Konga</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Bet9ja</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Fliqpay</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="inactive">Inactive</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>IrokoTV</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Konga</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Bet9ja</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Fliqpay</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="inactive">Inactive</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>IrokoTV</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Konga</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Bet9ja</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Fliqpay</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="inactive">Inactive</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>IrokoTV</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Konga</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Bet9ja</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Fliqpay</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="inactive">Inactive</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>IrokoTV</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Konga</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Bet9ja</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Fliqpay</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="inactive">Inactive</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>IrokoTV</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Konga</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Bet9ja</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Fliqpay</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="inactive">Inactive</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>IrokoTV</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Konga</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Bet9ja</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Fliqpay</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="inactive">Inactive</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>IrokoTV</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Konga</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Bet9ja</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Fliqpay</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="inactive">Inactive</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>IrokoTV</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Konga</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Bet9ja</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Fliqpay</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="inactive">Inactive</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>IrokoTV</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Konga</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Bet9ja</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Fliqpay</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="inactive">Inactive</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>IrokoTV</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Konga</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Bet9ja</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="paid">Paid</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>N300,000</td>
+                                    <td>Fliqpay</td>
+                                    <td>4627eggdf</td>
+                                    <td>18 Apr, 2019 - 18 May, 2019</td>
+                                    <td>3 months</td>
+                                    <td>N370,000</td>
+                                    <td>
+                                        <div class="inactive">Inactive</div>
+                                    </td>
+                                </tr>
+
+
+
+                            </tbody>
+                        </table>
+                    </div><!-- table-wrapper -->
+
+
+                    <div id="modaldemo4" class="modal fade shopModal-body">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content tx-size-sm">
+                                <div class="modal-body pd-y-40 pd-x-40">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+
+                                    <h4 class="pss-header-h-1  tx-semibold mg-t-20 mg-b-20 ">Continue with Iroko</h4>
+                                    <div class=" mg-b-10">
+                                        <img class="user-brands" src="../../assets/logo/Iroko-tv-logo.svg"
+                                            alt="Iroko-tv-logo">
+                                    </div>
+                                    <p class="user-brand-name pss-blue">Iroko TV</p>
+                                    <p class="user-brand-text-2 tx-small mg-b-10">Get between 0% - 100%<br /> APR on
+                                        Iroko only on PSS</p>
+                                    <div class="pd-y-15">
+                                        <p class="signin-title-secondary-2">What to expect:</p>
+
+                                        <p class="signin-title-secondary-2 pd-l-10">- Quick warranty</p>
+                                        <p class="signin-title-secondary-2  pd-l-10">- Easy delivery</p>
+                                    </div>
+                                    <div class="modalBtn">
+                                        <a href="../user-dashboard/request-card.html"><button
+                                                class="btn-fill-md formPSSbtn  pd-x-45" id="submit">Get
+                                                Started</button></a>
+                                    </div>
+
+                                    <p class="signup-tc">Creating an account assumes that you agree to our <a href="">
+                                            <span class="pss-blue">Terms of services</span></a> </p>
+
+                                </div><!-- modal-body -->
+                            </div><!-- modal-content -->
+                        </div><!-- modal-dialog -->
+                    </div><!-- modal -->
+
+                </div>
+
+            </div>
+        </div><!-- container -->
+
+
+    </div><!-- slim-mainpanel -->
+    </div><!-- slim-body -->
+
+    <script src="../../lib/jquery/js/jquery.js"></script>
+    <script src="../../lib/popper.js/js/popper.js"></script>
+    <script src="../../lib/bootstrap/js/bootstrap.js"></script>
+    <script src="../../lib/jquery.cookie/js/jquery.cookie.js"></script>
+    <script src="../lib/datatables/js/jquery.dataTables.js"></script>
+    <script src="../lib/datatables-responsive/js/dataTables.responsive.js"></script>
+    <script src="../lib/select2/js/select2.min.js"></script>
+
+    <script src="../js/slim.js"></script>
+    <script>
+        $(function () {
+            'use strict';
+
+            $('#datatable1').DataTable({
+                responsive: true,
+                language: {
+                    searchPlaceholder: 'Search...',
+                    sSearch: '',
+                    lengthMenu: '_MENU_ items/page',
+                }
+            });
+
+            $('#datatable2').DataTable({
+                bLengthChange: false,
+                searching: false,
+                responsive: true
+            });
+
+            // Select2
+            $('.dataTables_length select').select2({
+                minimumResultsForSearch: Infinity
+            });
+
+        });
+    </script>
+</body>
+
+</html>
